@@ -1,0 +1,18 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: hsl(15, 0%, 0%);
+}
+
+canvas {
+    
+}
+
+.start-button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1rem;
+    font-size: large;
+    font-weight: bold;
+}

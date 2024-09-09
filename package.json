@@ -1,0 +1,35 @@
+{
+  "name": "your-package",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "postinstall": "npx commitizen init cz-conventional-changelog --save-dev --save-exact --force",
+    "dev": "vite",
+    "sendit": "npm run build && npm run add && npm run commit && npm run push",
+    "add": "git add .",
+    "commit": "cz",
+    "push": "git push origin"
+  },
+  "devDependencies": {
+    "@aliser/logger": "^1.1.2",
+    "@types/node": "^20.12.12",
+    "@types/p5": "^1.7.6",
+    "commander": "^12.1.0",
+    "concurrently": "^8.2.2",
+    "cz-conventional-changelog": "^3.3.0",
+    "rollup-plugin-cleanup": "^3.2.1",
+    "typescript": "^5.4.5",
+    "vite": "^5.2.11",
+    "vite-node": "^1.6.0",
+    "vite-tsconfig-paths": "^4.3.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  },
+  "dependencies": {
+    "p5": "^1.10.0"
+  }
+}
